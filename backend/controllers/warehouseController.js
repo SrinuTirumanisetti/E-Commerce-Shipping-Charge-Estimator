@@ -42,6 +42,7 @@ const getNearestWarehouse = async (req, res) => {
 
     res.json({
       warehouseId: nearestWarehouse._id,
+      warehouseName: nearestWarehouse.name,
       warehouseLocation: {
         lat: nearestWarehouse.location.lat,
         long: nearestWarehouse.location.lng,

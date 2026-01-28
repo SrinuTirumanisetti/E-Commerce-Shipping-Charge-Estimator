@@ -130,6 +130,7 @@ function App() {
           {nwResult && (
             <div className="result">
               <h3>Result:</h3>
+              <p><strong>Warehouse Name:</strong> {nwResult.warehouseName}</p>
               <p><strong>Warehouse ID:</strong> {nwResult.warehouseId}</p>
               <p><strong>Location:</strong> {nwResult.warehouseLocation.lat}, {nwResult.warehouseLocation.long}</p>
             </div>
@@ -216,7 +217,8 @@ function App() {
             <div className="result">
               <h3>Result:</h3>
               <p><strong>Shipping Charge:</strong> ₹{ccResult.shippingCharge}</p>
-              <p><strong>Nearest Warehouse:</strong> {ccResult.nearestWarehouse.warehouseLocation.lat}, {ccResult.nearestWarehouse.warehouseLocation.long}</p>
+              <p><strong>Nearest Warehouse Name:</strong> {ccResult.nearestWarehouse.warehouseName}</p>
+              <p><strong>Nearest Warehouse Location:</strong> {ccResult.nearestWarehouse.warehouseLocation.lat}, {ccResult.nearestWarehouse.warehouseLocation.long}</p>
             </div>
           )}
         </div>

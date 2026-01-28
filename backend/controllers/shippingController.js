@@ -137,6 +137,7 @@ const calculateShippingChargeCombined = async (req, res) => {
       shippingCharge: parseFloat(calculation.totalCharge.toFixed(2)),
       nearestWarehouse: {
         warehouseId: nearestWarehouse._id,
+        warehouseName: nearestWarehouse.name,
         warehouseLocation: {
           lat: nearestWarehouse.location.lat,
           long: nearestWarehouse.location.lng
